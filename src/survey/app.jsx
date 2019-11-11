@@ -1,6 +1,7 @@
 import React from 'react';
 import {Provider} from 'react-redux';
-import './app.css';
+
+import './app.scss';
 import Store from './store';
 import BaseSurvey from './base/BaseSurvey';
 

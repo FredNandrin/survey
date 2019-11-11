@@ -11,10 +11,9 @@ class Question extends React.Component {
         if (this.props.data) {
             const question=this.props.data.question;
             const answers = this.props.data.answers.map((answer, id) =>
-                <button key={id}
-                        onClick={() => this.props.onOptionClick(id)}
-                        className={"btn m-2"}>{answer.answer} {answer.id}</button>);
-            const customerChoice=this.props.data.customerChoice;
+                <button key={id} data-question={this.props.questionid} data-answer={id}
+                        onClick={() => this.props.onOptionClick(this.props.questionid,id)}
+                        className={"btn m-2"+(id===this.props.answers[this.props.questionid]?" btn-primary":"")}>{answer.answer}</button>);
             return (
                 <div className={"card mb-4 shadow-sm"}>
                     <div className="card-header">
@@ -22,7 +21,7 @@ class Question extends React.Component {
                     </div>
                     <div className="card-body">
                         <div>
-                            {question}{customerChoice}
+                            {question}
                         </div>
                         <div className={"clearfix"}>{answers}</div>
                     </div>
@@ -39,14 +38,17 @@ class Question extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onOptionClick: (id) => {
-            dispatch(onOptionClick(id))
+        onOptionClick: (questionid,id) => {
+            dispatch(onOptionClick(questionid,id))
         }
     }
 }
 
 const mapStateToProps = (state) => {
-    return {}
+    return {
+        answers: state.data.answers,
+        datas: state.data
+    }
 }
 
 

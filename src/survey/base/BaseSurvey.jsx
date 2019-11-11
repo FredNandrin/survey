@@ -12,7 +12,7 @@ class baseSurvey extends React.Component {
 
     render() {
         if (!this.props.isPending && this.props.data) {
-            var questionsList=this.props.data.survey.map((service, id) =><Question key={id} data={service} />)
+            var questionsList=this.props.data.survey.map((service, id) =><Question key={id} questionid={id} customerChoice={service.customerChoice} data={service} />)
             return (
                 <div>
                     {questionsList}
@@ -44,6 +44,8 @@ const mapStateToProps = (state) => {
         isPending: state.data.pending,
         isEligible: state.data.eligible,
         data: state.data.data,
+        answers: state.answers,
+
     }
 }
 
