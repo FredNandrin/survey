@@ -1,0 +1,89 @@
+{
+  "translation": {
+    "fr": {
+      "azer": "azer",
+      "qsdf": "qsdf",
+      "wxcv": "wxcv"
+    }
+  },
+  "survey": [
+    {
+      "question": "question 1 ?",
+      "answers": [
+        {
+          "answer": "Jamais",
+          "value": -2
+        },
+        {
+          "answer": "Rarement",
+          "value": -1
+        },
+        {
+          "answer": "De temps en temps",
+          "value": 0
+        },
+        {
+          "answer": "Souvent",
+          "value": 1
+        },
+        {
+          "answer": "Toujours",
+          "value": 2
+        }
+      ],
+      "customerChoice": ""
+    },
+    {
+      "question": "question 2 ?",
+      "answers": [
+        {
+          "answer": "Jamais",
+          "value": -2
+        },
+        {
+          "answer": "Rarement",
+          "value": -1
+        },
+        {
+          "answer": "De temps en temps",
+          "value": 0
+        },
+        {
+          "answer": "Souvent",
+          "value": 1
+        },
+        {
+          "answer": "Toujours",
+          "value": 2
+        }
+      ],
+      "customerChoice": ""
+    },
+    {
+      "question": "question 3 ?",
+      "answers": [
+        {
+          "answer": "Jamais",
+          "value": -2
+        },
+        {
+          "answer": "Rarement",
+          "value": -1
+        },
+        {
+          "answer": "De temps en temps",
+          "value": 0
+        },
+        {
+          "answer": "Souvent",
+          "value": 1
+        },
+        {
+          "answer": "Toujours",
+          "value": 2
+        }
+      ],
+      "customerChoice": ""
+    }
+  ]
+}
