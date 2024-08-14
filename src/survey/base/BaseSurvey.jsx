@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {fetchDataPending, setSurveyData} from './actions';
 import Question from './question'
-import axios from "axios/index";
+import axios from "axios";
 
 
 class baseSurvey extends React.Component {

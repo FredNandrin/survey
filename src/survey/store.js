@@ -1,5 +1,5 @@
 import {applyMiddleware, combineReducers, createStore} from 'redux'
-import thunk from 'redux-thunk';
+import { thunk } from 'redux-thunk';
 import {questionReducer} from "./base/reducer";
 
 const reducers = combineReducers({
